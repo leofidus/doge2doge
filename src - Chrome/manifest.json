@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "Doge2Doge",
+	"version": "1.0.1",
+	"description": "Converts prices in USD to dogecoin and shows the converted price next to the original on all visited websites",
+	"author": "Jannis Froese",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["doge2doge.js"],
+			"run_at": "document_end"
+		}
+	],
+	"icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+	"content_security_policy": "default-src 'none'; style-src 'none'; script-src 'self'; connect-src http://anonym.lionservers.de; img-src none"
+}

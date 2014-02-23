@@ -1,0 +1,3 @@
+1,51 is recognized as 151
+Add support for more currencies
+Guess which dollar (Canadian, Australian etc.) is meant with $ symbol
